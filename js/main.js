@@ -29,8 +29,16 @@ function slideLeft() {
     track.style.transform = `translateX(-${currentSlide * (track.children[0].offsetWidth + 30)}px)`;
   }
 }
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
 /* AUTO SLIDE */
 setInterval(() => {
   slideRight();
 }, 5000);
+
