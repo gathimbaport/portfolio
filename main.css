@@ -815,40 +815,53 @@ html, body {
     display: flex;
   }
 
+  @media (max-width: 768px) {
+
+  /* NAVBAR WRAPPER */
+  .navbar {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* SHOW HAMBURGER */
+  .hamburger {
+    display: flex;
+  }
+
+  /* HIDE NAV BY DEFAULT */
   .navbar nav {
     position: absolute;
-    top: 70px;
+    top: 100%;
     left: 0;
     width: 100%;
     background: #1f2933;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 25px 0;
+    padding: 0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
+    display: flex;
   }
 
+  /* SHOW NAV WHEN ACTIVE */
   .navbar nav.active {
-    max-height: 300px;
+    max-height: 320px;
+    padding: 25px 0;
   }
 
   .navbar nav a {
+    margin: 0;
     font-size: 18px;
   }
 }
-.hamburger.active span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+.navbar nav {
+  display: flex;
 }
 
-.hamburger.active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
 
 
 
