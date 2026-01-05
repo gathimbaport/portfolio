@@ -22,7 +22,21 @@ html, body {
     justify-content: space-between;
     align-items: center;
   }
-  
+  /* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  transition: all 0.4s ease;
+}
+
   .logo span {
     color: #f59e0b;
   }
@@ -797,6 +811,45 @@ html, body {
     padding: 20px;
     text-align: center;
   }
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #1f2933;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .navbar nav.active {
+    max-height: 300px;
+  }
+
+  .navbar nav a {
+    font-size: 18px;
+  }
 }
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+
 
 
