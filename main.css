@@ -672,4 +672,83 @@
     50% { transform: scale(1.15); opacity: 0.85; }
     100% { transform: scale(1); opacity: 1; }
   }
+/* ============================
+   MOBILE RESPONSIVENESS
+   ============================ */
+
+@media (max-width: 768px) {
+
+  /* NAVIGATION */
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    width: 220px;
+    margin: 30px auto 0;
+  }
+
+  /* SERVICES */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* PROJECT CARDS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* GALLERY SLIDER */
+  .gallery-track img {
+    width: 260px;
+    height: 180px;
+  }
+
+  /* CONTACT PAGE */
+  .contact-actions {
+    grid-template-columns: 1fr;
+    padding: 50px 30px;
+  }
+
+  .contact-buttons {
+    margin-top: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button, a {
+  touch-action: manipulation;
+}
+
       
