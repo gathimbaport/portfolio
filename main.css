@@ -13,7 +13,11 @@ html, body {
     background: #f4f4f4;
     color: #333;
   }
-  
+  .navbar {
+  position: relative;
+  z-index: 1000;
+}
+
   .navbar {
     background: #1f2933;
     color: white;
@@ -56,12 +60,18 @@ html, body {
     justify-content: center;
     text-align: center;
   }
-  
+  .hero-overlay {
+  pointer-events: none;
+}
+
   .hero-content {
     color: white;
     animation: fadeIn 2s ease;
   }
-  
+  .hero-container {
+  pointer-events: auto;
+}
+
   .btn {
     display: inline-block;
     margin-top: 20px;
@@ -861,6 +871,7 @@ html, body {
 .navbar nav {
   display: flex;
 }
+
 
 
 
