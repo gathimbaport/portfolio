@@ -1,145 +1,501 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Gathimba | Professional Portfolio</title>
+
   <link rel="stylesheet" href="main.css">
+
   <script defer src="js/main.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
-<header class="navbar">
-  <h1 class="logo">QS <span>Gathimba</span></h1>
+  <!-- ================= NAVIGATION ================= -->
 
-  <!-- HAMBURGER -->
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+  <header class="navbar">
 
-  <nav id="nav-menu">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <h1 class="logo">
+      QS <span>Gathimba</span>
+    </h1>
 
+    <!-- HAMBURGER -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-overlay"></div>
-  
-    <div class="hero-container">
+    <!-- NAVIGATION MENU -->
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="articles.html">Insights</a>
       
-      <!-- LEFT CONTENT -->
+    </nav>
+
+  </header>
+
+
+  <!-- ================= HERO SECTION ================= -->
+
+  <section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-container">
+
+
+      <!-- ================= LEFT CONTENT ================= -->
+
       <div class="hero-text animate">
+
         <h2>
           Quantity Surveying <br>
           <span>& Construction Project Management</span>
         </h2>
-  
+
         <p class="hero-subtext">
-          Delivering precise cost estimates ,bill of quantities, financial project planning , and contract
-          administration services that drive value and certainty in construction projects.
+          Delivering precise cost estimates, bills of quantities, financial
+          project planning, and contract administration services that drive
+          value and certainty in construction projects.
         </p>
-  
+
+
+        <!-- HERO BUTTONS -->
+
         <div class="hero-buttons">
-          <a href="services.html" class="btn primary">View Services</a>
-          <a href="projects.html" class="btn secondary">View Projects</a>
+
+          <a href="services.html" class="btn primary">
+            View Services
+          </a>
+
+          <a href="projects.html" class="btn secondary">
+            View Projects
+          </a>
+
+          <a href="contact.html" class="btn contact-btn">
+            Contact Me
+          </a>
+
         </div>
-  
+
+
         <!-- STATS -->
+
         <div class="hero-stats">
+
           <div>
             <h3>Project Cost</h3>
             <p>Planning & Control</p>
           </div>
+
           <div>
             <h3>Contracts</h3>
             <p>Administration</p>
           </div>
+
           <div>
             <h3>Value Engineering</h3>
             <p>Optimisation</p>
           </div>
+
         </div>
+
       </div>
-  
-      <!-- RIGHT VISUAL -->
+
+
+
+      <!-- =====================================================
+           RIGHT VISUAL — CONSTRUCTION SITE ANIMATION
+           ===================================================== -->
+
       <div class="hero-visual animate">
-        <div class="blueprint-box">
-          <span></span><span></span><span></span><span></span>
-          <p>Built To be the preferred quantity surveying partner, recognized for reliable cost control, transparency, and professional service across the construction industry.</p>
+
+        <div class="construction-scene">
+
+
+          <!-- ================= SKY / ATMOSPHERE ================= -->
+
+          <div class="construction-sky"></div>
+
+
+          <!-- ================= SUN / LIGHT ================= -->
+
+          <div class="construction-sun"></div>
+
+
+          <!-- ================= DISTANT BUILDINGS ================= -->
+
+          <div class="distant-building building-a"></div>
+          <div class="distant-building building-b"></div>
+          <div class="distant-building building-c"></div>
+
+
+          <!-- ================= CRANE ================= -->
+
+          <div class="construction-crane">
+
+            <!-- Crane vertical tower -->
+            <div class="crane-tower">
+
+              <span class="tower-section"></span>
+              <span class="tower-section"></span>
+              <span class="tower-section"></span>
+              <span class="tower-section"></span>
+
+            </div>
+
+
+            <!-- Crane top -->
+            <div class="crane-top">
+
+              <div class="crane-arm">
+
+                <div class="crane-counterweight"></div>
+
+                <div class="crane-cable">
+                  <span></span>
+                </div>
+
+                <div class="crane-hook">
+                  <span></span>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ================= BUILDING UNDER CONSTRUCTION ================= -->
+
+          <div class="building-site">
+
+
+            <!-- FOUNDATION -->
+
+            <div class="construction-foundation">
+
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+            </div>
+
+
+            <!-- BUILDING STRUCTURE -->
+
+            <div class="building-structure">
+
+              <!-- Ground floor -->
+              <div class="building-floor floor-one">
+
+                <div class="building-column column-1"></div>
+                <div class="building-column column-2"></div>
+                <div class="building-column column-3"></div>
+                <div class="building-column column-4"></div>
+
+                <div class="building-beam"></div>
+
+                <div class="building-window window-1"></div>
+                <div class="building-window window-2"></div>
+
+              </div>
+
+
+              <!-- Second floor -->
+              <div class="building-floor floor-two">
+
+                <div class="building-column column-1"></div>
+                <div class="building-column column-2"></div>
+                <div class="building-column column-3"></div>
+                <div class="building-column column-4"></div>
+
+                <div class="building-beam"></div>
+
+                <div class="building-window window-3"></div>
+                <div class="building-window window-4"></div>
+
+              </div>
+
+
+              <!-- Roof -->
+              <div class="building-roof">
+
+                <div class="roof-left"></div>
+                <div class="roof-right"></div>
+
+              </div>
+
+            </div>
+
+
+            <!-- ================= CONSTRUCTION MATERIALS ================= -->
+
+            <div class="construction-materials">
+
+              <div class="material-pallet"></div>
+
+              <div class="material-stack stack-one"></div>
+              <div class="material-stack stack-two"></div>
+              <div class="material-stack stack-three"></div>
+
+              <div class="cement-bag bag-one"></div>
+              <div class="cement-bag bag-two"></div>
+
+            </div>
+
+
+            <!-- ================= CONSTRUCTION WORKER ================= -->
+
+            <div class="construction-worker">
+
+              <div class="worker-head"></div>
+
+              <div class="worker-body"></div>
+
+              <div class="worker-leg left-leg"></div>
+              <div class="worker-leg right-leg"></div>
+
+              <div class="worker-helmet"></div>
+
+            </div>
+
+
+          </div>
+
+
+          <!-- ================= DUST PARTICLES ================= -->
+
+          <div class="construction-dust">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </div>
+
+
+          <!-- ================= CONSTRUCTION SIGN ================= -->
+
+          <div class="construction-sign-wrapper">
+
+            <div class="construction-sign">
+
+              <div class="sign-stripes"></div>
+
+              <div class="sign-content">
+
+                <div class="sign-icon">
+                  ⚠
+                </div>
+
+                <div class="sign-title">
+                  SITE
+                </div>
+
+                <div class="sign-title">
+                  UNDER
+                </div>
+
+                <div class="sign-title">
+                  CONSTRUCTION
+                </div>
+
+                <div class="sign-subtitle">
+                  BUILDING SOMETHING GREAT
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- Sign poles -->
+
+            <div class="sign-pole pole-left"></div>
+            <div class="sign-pole pole-right"></div>
+
+          </div>
+
+
+          <!-- ================= CONSTRUCTION TAPE ================= -->
+
+          <div class="construction-tape tape-top">
+            <span>⚠ SITE UNDER CONSTRUCTION ⚠</span>
+          </div>
+
+          <div class="construction-tape tape-bottom">
+            <span>⚠ BUILDING THE FUTURE ⚠</span>
+          </div>
+
+
+          <!-- ================= GLOW ================= -->
+
+          <div class="construction-glow"></div>
+
         </div>
+
+
+        <!-- ================= PROFESSIONAL MESSAGE ================= -->
+
+        <div class="visual-message">
+
+          <div class="message-icon">
+            ⌂
+          </div>
+
+          <p>
+            <strong>Built for value optimization.</strong>
+            From early cost planning and management to contract
+            administration and project completion.
+          </p>
+
+        </div>
+
       </div>
-  
+
     </div>
-  
-    <!-- SCROLL INDICATOR -->
+
+
+    <!-- ================= SCROLL INDICATOR ================= -->
+
     <div class="scroll-indicator">
       <span></span>
     </div>
+
   </section>
-  
 
-<!-- INTRODUCTION SECTION -->
-<section class="intro animate">
-  <div class="intro-text">
-    <h3>Professional Introduction</h3>
+
+
+  <!-- ================= INTRODUCTION ================= -->
+
+  <section class="intro animate">
+
+    <div class="intro-text">
+
+      <h3>
+     What I Add to Your Project
+      </h3>
+
+      <p>
+        From accurate cost estimates and bespoke contracts 
+        to detailed Bills of Quantities, contract administration, 
+        project management from inception to completion, and precise remeasurements,
+         I bring a comprehensive approach to managing your project’s cost, time and 
+         contractual requirements.
+          My focus is on delivering cost certainty, effective contract 
+          management, accurate valuations and informed decision-making at every 
+          stage of the project.
+      </p>
+
+    </div>
+
+
+    <div class="intro-image">
+
+      <img
+        src="images/WhatsApp Image 2026-01-05 at 12.09.55 (1).jpeg"
+        alt="Quantity Surveyor Profile"
+      >
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= BACKGROUND ================= -->
+
+  <section class="background">
+
+    <h3>
+      Professional Focus
+    </h3>
+
+
+    <div class="background-grid">
+
+
+      <div class="bg-item animate">
+
+        <h4>
+          Fit Out Works 
+        </h4>
+
+        <p>
+          Having graduated with a Bachelor's Degree in Quantity Surveying from
+          the University of Nairobi, I have a strong grounding in construction
+          economics, measurement, cost control, tender processes, and contract
+          administration, aligned with modern technological advancements.
+        </p>
+
+      </div>
+
+
+
+      <div class="bg-item animate">
+
+        <h4>
+        Residential Development  
+        </h4>
+
+        <p>
+          Experience gained through project site involvement, project
+          inspections, valuations, and preparation of contractual documentation.
+        </p>
+
+      </div>
+
+
+
+      <div class="bg-item animate">
+
+        <h4>
+          Professional Values
+        </h4>
+
+        <p>
+          Accuracy, integrity, accountability, and value for money form the core
+          principles guiding all professional engagements.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
     <p>
-      I am a Quantity Surveying professional offering consultancy services in
-      cost planning, bills of quantities, contract administration,construction projects Management. This platform highlights my technical
-      skills, project experience, and professional services to the built environment.
+      © 2026 Gathimba | Quantity Surveyor
     </p>
-  </div>
 
-  <div class="intro-image">
-    <!-- Replace the image later with your own -->
-    <img src="images/WhatsApp Image 2026-01-05 at 12.09.55 (1).jpeg" alt="Quantity Surveyor Profile">
-  </div>
-</section>
+  </footer>
 
-<!-- BACKGROUND / EXPERIENCE SECTION -->
-<section class="background">
-  <h3>Background & Professional Focus</h3>
-  <div class="background-grid">
-    <div class="bg-item animate">
-      <h4>Academic & Technical Foundation</h4>
-      <p>
-        Having graduated with Bachelor's Degree in Quantity Surveying from The University of Nairobi,I have Strong grounding in construction economics, measurement, cost control,
-        tender processes, and contract administration, aligned with mordern and technological advancements.
-      </p>
-    </div>
-
-    <div class="bg-item animate">
-      <h4>Industry Exposure</h4>
-      <p>
-        Experience gained through the various project  site involvement, project inspections,
-        valuations, and preparation of contractual documentation.
-      </p>
-    </div>
-
-    <div class="bg-item animate">
-      <h4>Professional Values</h4>
-      <p>
-        Accuracy, integrity, accountability, and value-for-money form the core
-        principles guiding all professional engagements.
-      </p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Gathimba | Built Environment Professional</p>
-</footer>
 
 </body>
 </html>
-
-
-
-
+```
