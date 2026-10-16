@@ -1,91 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Quantity Surveying Portfolio</title>
-  <link rel="stylesheet" href="main.css">
-  <script defer src="js/main.js"></script>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact John Wachira Gathimba, Quantity Surveyor, for cost planning, bills of quantities, valuations, final accounts and construction cost management.">
+    <meta name="theme-color" content="#0d1014">
+    <meta name="color-scheme" content="dark">
 
+    <title>Contact | QS Gathimba – Quantity Surveyor</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff7a1a'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='800' text-anchor='middle' fill='%23140a02'%3EQS%3C/text%3E%3C/svg%3E">
+
+    <script>document.documentElement.classList.add('js');</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+    <!-- All styling for this page lives in contact.css -->
+    <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
-<header class="navbar">
-  <h1 class="logo">QS<span> Gathimba</span></h1>
 
-  <!-- HAMBURGER -->
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <nav id="nav-menu">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
 
 
-<!-- PAGE HEADER -->
-<section class="page-header">
-  <h2>Get in Touch</h2>
-  <p>Let’s discuss your project requirements</p>
-</section>
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="nav-container">
 
-<!-- CONTACT ACTIONS -->
-<section class="contact-actions animate">
+            <a href="index.html" class="brand" aria-label="QS Gathimba home">
+                <span class="brand-main">QS</span>
+                <span class="brand-name">Gathimba</span>
+            </a>
 
-    <div class="contact-buttons">
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNav"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <!-- WHATSAPP -->
-        <a href="https://wa.me/254700000000" target="_blank" class="contact-btn whatsapp">
-          <span class="icon">
-            <!-- WhatsApp SVG -->
-            <svg viewBox="0 0 32 32">
-              <path d="M19.11 17.56c-.29-.14-1.72-.85-1.99-.95-.27-.1-.47-.14-.67.14-.2.29-.77.95-.95 1.14-.17.2-.34.22-.63.07-.29-.14-1.23-.45-2.34-1.43-.87-.77-1.45-1.72-1.62-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.51.14-.17.19-.29.29-.48.1-.2.05-.38-.02-.53-.07-.14-.67-1.61-.92-2.21-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.53.07-.8.38-.27.29-1.05 1.03-1.05 2.5s1.07 2.9 1.22 3.1c.14.2 2.1 3.2 5.08 4.48.71.31 1.27.5 1.7.64.71.23 1.36.2 1.87.12.57-.08 1.72-.7 1.96-1.37.24-.67.24-1.24.17-1.36-.07-.12-.27-.2-.56-.34z"/>
-              <path d="M16 2.67C8.82 2.67 3 8.49 3 15.67c0 2.5.66 4.94 1.92 7.07L3 29.33l6.78-1.78a13 13 0 006.22 1.59c7.18 0 13-5.82 13-13S23.18 2.67 16 2.67z"/>
-            </svg>
-          </span>
-          <span class="label">WhatsApp</span>
-        </a>
-      
-        <!-- LINKEDIN -->
-        <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" class="contact-btn linkedin">
-          <span class="icon">
-            <!-- LinkedIn SVG -->
-            <svg viewBox="0 0 24 24">
-              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4zM8 8h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2C19.5 8 21 10.42 21 14.04V24h-4v-8.45c0-2.02-.04-4.62-2.82-4.62-2.82 0-3.25 2.2-3.25 4.48V24H8z"/>
-            </svg>
-          </span>
-          <span class="label">LinkedIn</span>
-        </a>
-      
-        <!-- EMAIL -->
-        <a href="mailto:yourname@email.com" class="contact-btn email">
-          <span class="icon">
-            <!-- Email SVG -->
-            <svg viewBox="0 0 24 24">
-              <path d="M2 4h20v16H2z"/>
-              <path d="M22 4L12 13 2 4"/>
-            </svg>
-          </span>
-          <span class="label">Email</span>
-        </a>
-      
-      </div>
-      
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html" class="active" aria-current="page">Contact</a>
+                <a href="articles.html">Insights</a>
+            </nav>
 
-</section>
+        </div>
+    </header>
 
-<footer>
-  <p>© 2026 Gathimba| Contact</p>
-</footer>
+
+    <main id="main">
+
+        <!-- =================================================
+             HERO
+             ================================================= -->
+        <section class="ct-hero" id="top">
+
+            <div class="ct-grid-lines" aria-hidden="true"></div>
+            <div class="ct-orb ct-orb-one" aria-hidden="true"></div>
+            <div class="ct-orb ct-orb-two" aria-hidden="true"></div>
+            <div class="ct-spot" aria-hidden="true"></div>
+
+            <div class="ct-shell ct-hero-inner">
+
+                <nav class="ct-crumbs reveal" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span aria-hidden="true">/</span>
+                    <span aria-current="page">Contact</span>
+                </nav>
+
+                <div class="ct-eyebrow reveal">Get in touch</div>
+
+                <h1 class="reveal">
+                    Let's talk about
+                    <span>your project.</span>
+                </h1>
+
+                <p class="ct-lead reveal">
+                    Planning a development, managing construction costs or looking
+                    for professional quantity surveying support? Tell me about your
+                    project and let's bring cost certainty to it.
+                </p>
+
+                <div class="ct-quick reveal">
+                    <a class="btn btn-primary" href="#enquiry">
+                        Send an enquiry <span aria-hidden="true">↓</span>
+                    </a>
+                    <a class="btn btn-outline" data-ct="mail-link" href="mailto:qsgathimba@gmail.com>
+                        Email directly <span aria-hidden="true">↗</span>
+                    </a>
+                    <a class="btn btn-dark" data-ct="whatsapp-link" href="https://wa.me/254712387491" target="_blank" rel="noopener">
+                        WhatsApp <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+
+                <div class="ct-trust reveal">
+                    <span class="live-dot" aria-hidden="true"></span>
+                    <span>Cost • Quality • Value</span>
+                    <span class="trust-line" aria-hidden="true"></span>
+                    <span>Construction Focused</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ENQUIRY: FORM + CONTACT DETAILS
+             ================================================= -->
+        <section class="ct-main" id="enquiry">
+            <div class="ct-shell ct-layout">
+
+                <!-- FORM -->
+                <div class="ct-panel ct-fx">
+
+                    <div class="ct-panel-head">
+                        <span class="ct-eyebrow">Project enquiry</span>
+                        <h2>Tell me about <span>your project.</span></h2>
+                        <p>Share a few details and I'll come back to you with the next steps. Fields marked * are required.</p>
+                    </div>
+
+                    <form class="ct-form" id="ctForm" novalidate>
+
+                        <div class="ct-row">
+                            <div class="ct-field">
+                                <input type="text" id="ctName" name="name" placeholder=" " autocomplete="name" required>
+                                <label for="ctName">Full name *</label>
+                                <small class="ct-error" id="ctNameErr" role="alert"></small>
+                            </div>
+
+                            <div class="ct-field">
+                                <input type="email" id="ctEmail" name="email" placeholder=" " autocomplete="email" required>
+                                <label for="ctEmail">Email address *</label>
+                                <small class="ct-error" id="ctEmailErr" role="alert"></small>
+                            </div>
+                        </div>
+
+                        <div class="ct-field">
+                            <input type="tel" id="ctPhone" name="phone" placeholder=" " autocomplete="tel">
+                            <label for="ctPhone">Phone / WhatsApp (optional)</label>
+                            <small class="ct-error" id="ctPhoneErr" role="alert"></small>
+                        </div>
+
+                        <fieldset class="ct-fieldset">
+                            <legend>What do you need help with?</legend>
+                            <div class="ct-chips">
+                                <label class="ct-chip">
+                                    <input type="radio" name="service" value="Residential project" checked>
+                                    <span>Residential project</span>
+                                </label>
+                                <label class="ct-chip">
+                                    <input type="radio" name="service" value="Affordable housing">
+                                    <span>Affordable housing</span>
+                                </label>
+                                <label class="ct-chip">
+                                    <input type="radio" name="service" value="Fitout / renovation">
+                                    <span>Fitout / renovation</span>
+                                </label>
+                                <label class="ct-chip">
+                                    <input type="radio" name="service" value="Something else">
+                                    <span>Something else</span>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="ct-field ct-field-select">
+                            <label for="ctStage">Project stage</label>
+                            <select id="ctStage" name="stage">
+                                <option>Early planning / budgeting</option>
+                                <option>Tender / bills of quantities</option>
+                                <option>Under construction</option>
+                                <option>Valuations / final account</option>
+                                <option>Not sure yet</option>
+                            </select>
+                        </div>
+
+                        <div class="ct-field">
+                            <textarea id="ctMessage" name="message" rows="5" maxlength="800" placeholder=" " required></textarea>
+                            <label for="ctMessage">Project details *</label>
+                            <div class="ct-meta">
+                                <small class="ct-error" id="ctMessageErr" role="alert"></small>
+                                <small class="ct-count"><span id="ctCount">0</span> / 800</small>
+                            </div>
+                        </div>
+
+                        <!-- honeypot: real visitors never see or fill this -->
+                        <div class="ct-hp" aria-hidden="true">
+                            <label>Company <input type="text" name="company" id="ctCompany" tabindex="-1" autocomplete="off"></label>
+                        </div>
+
+                        <div class="ct-submit">
+                            <button type="submit" class="btn btn-primary ct-send" id="ctSend">
+                                <b>Send enquiry</b> <span aria-hidden="true">↗</span>
+                            </button>
+                            <p class="ct-note">Your details are only used to respond to your enquiry.</p>
+                        </div>
+
+                        <p class="ct-status" id="ctStatus" role="status" aria-live="polite"></p>
+
+                    </form>
+
+                    <!-- success state -->
+                    <div class="ct-success" id="ctSuccess" hidden>
+                        <svg class="ct-check" viewBox="0 0 52 52" aria-hidden="true">
+                            <circle cx="26" cy="26" r="24"></circle>
+                            <path d="M15 27l8 8 14-17"></path>
+                        </svg>
+                        <h3 id="ctSuccessTitle">Thank you.</h3>
+                        <p id="ctSuccessText">Your enquiry is ready to go.</p>
+                        <div class="ct-success-actions">
+                            <button type="button" class="btn btn-outline" id="ctCopyMsg">Copy my message <span aria-hidden="true">⧉</span></button>
+                            <button type="button" class="btn btn-dark" id="ctAnother">Send another <span aria-hidden="true">↺</span></button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- DETAILS -->
+                <aside class="ct-aside" aria-label="Contact details">
+
+                    <div class="ct-card ct-fx">
+                        <span class="ct-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+                        </span>
+                        <div class="ct-card-body">
+                            <small>Email</small>
+                            <a data-ct="mail-text" href="mailto:info@example.com">info@example.com</a>
+                        </div>
+                        <button type="button" class="ct-copy" data-copy="email" aria-label="Copy email address">Copy</button>
+                    </div>
+
+                    <div class="ct-card ct-fx">
+                        <span class="ct-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"></path></svg>
+                        </span>
+                        <div class="ct-card-body">
+                            <small>Phone</small>
+                            <a data-ct="phone-text" href="tel:+254700000000">+254 700 000 000</a>
+                        </div>
+                        <button type="button" class="ct-copy" data-copy="phone" aria-label="Copy phone number">Copy</button>
+                    </div>
+
+                    <div class="ct-card ct-fx">
+                        <span class="ct-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M4 20l1.3-4.2A8 8 0 1112 20a8 8 0 01-3.8-1z"></path></svg>
+                        </span>
+                        <div class="ct-card-body">
+                            <small>WhatsApp</small>
+                            <a data-ct="whatsapp-link" href="https://wa.me/254700000000" target="_blank" rel="noopener">Message on WhatsApp</a>
+                        </div>
+                        <span class="ct-go" aria-hidden="true">↗</span>
+                    </div>
+
+                    <div class="ct-card ct-card-hours ct-fx">
+                        <div class="ct-hours-top">
+                            <span class="ct-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+                            </span>
+                            <div class="ct-card-body">
+                                <small>Working hours</small>
+                                <strong id="ctOpenState">Mon – Fri, 8:00 – 17:00</strong>
+                            </div>
+                        </div>
+                        <ul class="ct-hours">
+                            <li><span>Monday – Friday</span><b>8:00 – 17:00</b></li>
+                            <li><span>Saturday</span><b>By appointment</b></li>
+                            <li><span>Sunday</span><b>Closed</b></li>
+                        </ul>
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             HOW IT WORKS
+             ================================================= -->
+        <section class="ct-section ct-section-alt">
+            <div class="ct-shell">
+
+                <div class="ct-head ct-fx">
+                    <span class="ct-eyebrow">What happens next</span>
+                    <h2>A simple, <span>clear process.</span></h2>
+                </div>
+
+                <ol class="ct-steps">
+                    <li class="ct-step ct-fx">
+                        <span class="ct-step-no">01</span>
+                        <h3>Send your brief</h3>
+                        <p>Share the type of project, its stage and what you need measured, priced or managed.</p>
+                    </li>
+                    <li class="ct-step ct-fx">
+                        <span class="ct-step-no">02</span>
+                        <h3>Review &amp; conversation</h3>
+                        <p>I review your details and get in touch to clarify scope, documents and expectations.</p>
+                    </li>
+                    <li class="ct-step ct-fx">
+                        <span class="ct-step-no">03</span>
+                        <h3>Proposal &amp; start</h3>
+                        <p>You receive a clear scope and fee proposal, and once agreed, the work begins.</p>
+                    </li>
+                </ol>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             FAQ
+             ================================================= -->
+        <section class="ct-section">
+            <div class="ct-shell ct-faq-wrap">
+
+                <div class="ct-head ct-fx">
+                    <span class="ct-eyebrow">Good to know</span>
+                    <h2>Common <span>questions.</span></h2>
+                    <p>A few answers that help you prepare before we speak.</p>
+                </div>
+
+                <div class="ct-faq ct-fx" id="ctFaq">
+
+                    <div class="ct-faq-item">
+                        <h3>
+                            <button type="button" aria-expanded="false" aria-controls="faq1" id="faqb1">
+                                What should I have ready before contacting you?
+                                <i aria-hidden="true"></i>
+                            </button>
+                        </h3>
+                        <div class="ct-faq-panel" id="faq1" role="region" aria-labelledby="faqb1">
+                            <div><p>Drawings, a schedule of works or a budget if you have them. If not, a short description of the project and its stage is enough to start the conversation.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="ct-faq-item">
+                        <h3>
+                            <button type="button" aria-expanded="false" aria-controls="faq2" id="faqb2">
+                                Which types of projects do you support?
+                                <i aria-hidden="true"></i>
+                            </button>
+                        </h3>
+                        <div class="ct-faq-panel" id="faq2" role="region" aria-labelledby="faqb2">
+                            <div><p>Residential developments, affordable housing schemes and fitout or renovation works, covering cost planning, bills of quantities, valuations, final accounts and contract administration.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="ct-faq-item">
+                        <h3>
+                            <button type="button" aria-expanded="false" aria-controls="faq3" id="faqb3">
+                                How are fees decided?
+                                <i aria-hidden="true"></i>
+                            </button>
+                        </h3>
+                        <div class="ct-faq-panel" id="faq3" role="region" aria-labelledby="faqb3">
+                            <div><p>Fees depend on the scope, size and stage of the project. After we discuss your needs you receive a clear written proposal before any work begins.</p></div>
+                        </div>
+                    </div>
+
+                    <div class="ct-faq-item">
+                        <h3>
+                            <button type="button" aria-expanded="false" aria-controls="faq4" id="faqb4">
+                                Can you join a project that is already underway?
+                                <i aria-hidden="true"></i>
+                            </button>
+                        </h3>
+                        <div class="ct-faq-panel" id="faq4" role="region" aria-labelledby="faqb4">
+                            <div><p>Yes. Valuations, remeasurement and final accounts are often needed mid-project, so tell me the current stage and the documents you already have.</p></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             CLOSING BAND
+             ================================================= -->
+        <section class="ct-band-wrap">
+            <div class="ct-shell">
+                <div class="ct-band" id="ctBand">
+                    <div class="ct-band-text">
+                        <span class="ct-eyebrow">See the work first</span>
+                        <h2>Explore the <span>project spectrum.</span></h2>
+                        <p>Browse selected residential, affordable housing and fitout projects.</p>
+                    </div>
+                    <div class="ct-band-actions">
+                        <a href="projects.html" class="btn btn-primary">View Projects <span aria-hidden="true">↗</span></a>
+                        <a href="services.html" class="btn btn-outline">View Services <span aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>QS Gathimba</strong>
+                <span>Quantity Surveying &amp; Construction</span>
+            </div>
+            <p>© 2026 Gathimba | Quantity Surveyor</p>
+        </div>
+    </footer>
+
+    <div class="project-toast" id="ctToast" role="status" aria-live="polite"></div>
+
+    <script src="contact.js" defer></script>
 
 </body>
 </html>
-
-
-
-
