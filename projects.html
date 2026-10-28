@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selected quantity surveying projects by John Wachira Gathimba across residential development, affordable housing, and fitout & renovation works.">
+    <meta name="theme-color" content="#0d1014">
+    <meta name="color-scheme" content="dark">
+
+    <title>Projects | QS Gathimba – Quantity Surveying Portfolio</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff7a1a'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='800' text-anchor='middle' fill='%23140a02'%3EQS%3C/text%3E%3C/svg%3E">
+
+    <script>document.documentElement.classList.add('js');</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+    <!-- ALL styling for this page lives in projects.css (main.css is not needed) -->
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="page-progress" id="pageProgress" aria-hidden="true"></div>
+
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+    <header class="site-header" id="siteHeader">
+        <div class="nav-container">
+
+            <a href="index.html" class="brand" aria-label="QS Gathimba home">
+                <span class="brand-main">QS</span>
+                <span class="brand-name">Gathimba</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNav"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html" class="active" aria-current="page">Projects</a>
+                <a href="contact.html">Contact</a>
+                <a href="articles.html">Insights</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main id="main">
+
+        <!-- =================================================
+             HERO  (same structure as the home page)
+             ================================================= -->
+        <section class="hero pj-hero" id="top">
+
+            <div class="hero-grid-lines" aria-hidden="true"></div>
+            <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+            <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+            <div class="pj-spot" aria-hidden="true"></div>
+
+            <div class="hero-grid">
+
+                <!-- HERO CONTENT -->
+                <div class="hero-content reveal">
+
+                    <div class="eyebrow">
+                        <span></span>
+                        Project Portfolio
+                        •
+                        Selected Work
+                    </div>
+
+                    <h1>
+                        Projects built on
+                        <span>Cost Certainty.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        A selection of construction projects showing experience
+                        in quantity surveying, cost management, measurement and
+                        financial control, from residential developments to
+                        fitout works.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#residential" class="btn btn-primary">
+                            Browse Projects
+                            <span>↓</span>
+                        </a>
+
+                        <a href="services.html" class="btn btn-outline">
+                            View Services
+                            <span>→</span>
+                        </a>
+
+                        <a href="contact.html" class="btn btn-dark">
+                            Let's Talk
+                            <span>↗</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-trust">
+                        <span class="live-dot"></span>
+                        <span>Cost • Quality • Value</span>
+                        <span class="trust-line"></span>
+                        <span>Construction Focused</span>
+                    </div>
+
+                </div>
+
+
+                <!-- HERO PROJECT SHOWCASE -->
+                <div class="hero-showcase reveal reveal-delay">
+
+                    <div class="showcase-frame">
+
+                        <div class="showcase-main">
+
+                            <img
+                                src="image/Residential Appartments.jpeg"
+                                alt="Residential construction project"
+                                loading="eager"
+                            >
+
+                            <div class="image-shade"></div>
+
+                            <div class="floating-tag tag-top">
+                                <span class="tag-dot"></span>
+                                PROJECT PORTFOLIO
+                            </div>
+
+                            <div class="showcase-main-label">
+                                <span>01 / RESIDENTIAL</span>
+                                <strong>Construction &amp; Cost Management</strong>
+                            </div>
+
+                            <div class="scan-line" aria-hidden="true"></div>
+
+                        </div>
+
+
+                        <button
+                            class="showcase-card showcase-card-one"
+                            type="button"
+                            data-project="Affordable Housing"
+                            data-target="#affordable"
+                        >
+                            <img src="image/Project focus.jpeg" alt="Affordable housing construction" loading="lazy">
+                            <span class="card-index">02</span>
+                            <span class="showcase-card-content">
+                                <small>PROJECT TYPE</small>
+                                <strong>PROJECT FOCUS</strong>
+                            </span>
+                            <span class="card-arrow">↗</span>
+                        </button>
+
+
+                        <button
+                            class="showcase-card showcase-card-two"
+                            type="button"
+                            data-project="Fitout & Renovation"
+                            data-target="#fitout"
+                        >
+                            <img src="image/Fitout works.jpeg" alt="Fitout and renovation works" loading="lazy">
+                            <span class="card-index">03</span>
+                            <span class="showcase-card-content">
+                                <small>PROJECT TYPE</small>
+                                <strong>Fitout &amp; Renovations</strong>
+                            </span>
+                            <span class="card-arrow">↗</span>
+                        </button>
+
+
+                        <div class="technical-marker">
+                            <span>COST</span>
+                            <i></i>
+                            <span>QUALITY</span>
+                            <i></i>
+                            <span>VALUE</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="showcase-message">
+                        <div class="message-marker"></div>
+                        <div>
+                            <strong>Building with financial certainty.</strong>
+                            <p>From early cost planning through construction and completion.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a class="scroll-cue" href="#residential" aria-label="Scroll to projects">
+                <span>SCROLL TO EXPLORE</span>
+                <i></i>
+            </a>
+
+        </section>
+
+
+        <!-- SERVICES TICKER -->
+        <div class="pj-ticker" aria-hidden="true">
+            <div class="pj-ticker-track">
+                <span>Cost Planning</span><span>Bills of Quantities</span><span>Valuations</span><span>Final Accounts</span><span>Contract Administration</span><span>Remeasurement</span><span>Cost Control</span><span>Tender Evaluation</span>
+                <span>Cost Planning</span><span>Bills of Quantities</span><span>Valuations</span><span>Final Accounts</span><span>Contract Administration</span><span>Remeasurement</span><span>Cost Control</span><span>Tender Evaluation</span>
+            </div>
+        </div>
+
+
+        <!-- CATEGORY TABS (sticky) -->
+        <div class="pj-tabs-bar" id="pjTabsBar">
+            <div class="pj-shell">
+                <nav class="pj-tabs" aria-label="Jump to project category">
+                    <a href="#residential" class="active">Residential</a>
+                    <a href="#affordable">Affordable Housing</a>
+                    <a href="#fitout">Fitout Works</a>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- =================================================
+             RESIDENTIAL
+             ================================================= -->
+        <section class="pj-section" id="residential">
+            <div class="pj-shell">
+
+                <div class="pj-head pj-fx">
+                    <div>
+                        <span class="pj-eyebrow">Residential</span>
+                        <h2>Homes built <span>on a clear budget.</span></h2>
+                        <p>Private houses and estates where cost planning and measurement keep every stage of the build on track.</p>
+                    </div>
+                </div>
+
+                <div class="pj-showcase pj-fx" data-showcase="residential" tabindex="0" aria-roledescription="carousel" aria-label="Residential projects">
+
+                    <div class="pj-media">
+                        <img class="pj-img" src="image/Residential House.jpeg" alt="Residential development" loading="lazy">
+                        <div class="pj-shade"></div>
+                        <span class="pj-counter">01 / 03</span>
+                        <span class="pj-hint">Click to enlarge</span>
+                        <span class="pj-bar" aria-hidden="true"><i></i></span>
+                    </div>
+
+                    <div class="pj-info">
+                        <span class="pj-eyebrow">Residential</span>
+                        <h3 class="pj-title">Development &amp; Cost Planning</h3>
+                        <p class="pj-desc">Cost planning, measurement and commercial support focused on creating clear financial visibility throughout a residential development.</p>
+
+                        <div class="pj-facts">
+                            <div><span>FOCUS</span><strong class="pj-focus">Cost Planning</strong></div>
+                            <div><span>ROLE</span><strong class="pj-role">Quantity Surveying</strong></div>
+                            <div><span>APPROACH</span><strong class="pj-approach">Measure • Plan • Control</strong></div>
+                        </div>
+
+                        <div class="pj-controls">
+                            <button type="button" class="pj-prev" aria-label="Previous project">←</button>
+                            <button type="button" class="pj-next" aria-label="Next project">→</button>
+                            <div class="pj-dots" role="group" aria-label="Choose a project"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             AFFORDABLE HOUSING
+             ================================================= -->
+        <section class="pj-section pj-section-alt" id="affordable">
+            <div class="pj-shell">
+
+                <div class="pj-head pj-fx">
+                    <div>
+                        <span class="pj-eyebrow">Affordable Housing</span>
+                        <h2>More homes <span>within reach.</span></h2>
+                        <p>Large-scale housing where every shilling counts, so value engineering and tight cost control come first.</p>
+                    </div>
+                </div>
+
+                <div class="pj-showcase pj-fx" data-showcase="affordable" tabindex="0" aria-roledescription="carousel" aria-label="Affordable housing projects">
+
+                    <div class="pj-media">
+                        <img class="pj-img" src="image/Government projects.jpeg" alt="Affordable housing scheme" loading="lazy">
+                        <div class="pj-shade"></div>
+                        <span class="pj-counter">01 / 03</span>
+                        <span class="pj-hint">Click to enlarge</span>
+                        <span class="pj-bar" aria-hidden="true"><i></i></span>
+                    </div>
+
+                    <div class="pj-info">
+                        <span class="pj-eyebrow">Affordable Housing</span>
+                        <h3 class="pj-title">Affordable Housing Scheme</h3>
+                        <p class="pj-desc">Cost control and value engineering that keeps a large housing scheme within budget without cutting quality.</p>
+
+                        <div class="pj-facts">
+                            <div><span>FOCUS</span><strong class="pj-focus">Cost Control</strong></div>
+                            <div><span>ROLE</span><strong class="pj-role">Cost Consultant</strong></div>
+                            <div><span>APPROACH</span><strong class="pj-approach">Plan • Engineer • Control</strong></div>
+                        </div>
+
+                        <div class="pj-controls">
+                            <button type="button" class="pj-prev" aria-label="Previous project">←</button>
+                            <button type="button" class="pj-next" aria-label="Next project">→</button>
+                            <div class="pj-dots" role="group" aria-label="Choose a project"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             FITOUT WORKS
+             ================================================= -->
+        <section class="pj-section" id="fitout">
+            <div class="pj-shell">
+
+                <div class="pj-head pj-fx">
+                    <div>
+                        <span class="pj-eyebrow">Fitout Works</span>
+                        <h2>Interiors delivered <span>on time and on budget.</span></h2>
+                        <p>Offices, retail and hospitality spaces where fast programmes demand accurate bills of quantities and variation control.</p>
+                    </div>
+                </div>
+
+                <div class="pj-showcase pj-fx" data-showcase="fitout" tabindex="0" aria-roledescription="carousel" aria-label="Fitout projects">
+
+                    <div class="pj-media">
+                        <img class="pj-img" src="image/Fitout works.jpeg" alt="Office fitout" loading="lazy">
+                        <div class="pj-shade"></div>
+                        <span class="pj-counter">01 / 03</span>
+                        <span class="pj-hint">Click to enlarge</span>
+                        <span class="pj-bar" aria-hidden="true"><i></i></span>
+                    </div>
+
+                    <div class="pj-info">
+                        <span class="pj-eyebrow">Fitout Works</span>
+                        <h3 class="pj-title">Office Fitout Cost Management</h3>
+                        <p class="pj-desc">Fast, accurate pricing and variation tracking for an office fitout delivered on a tight programme.</p>
+
+                        <div class="pj-facts">
+                            <div><span>FOCUS</span><strong class="pj-focus">Fitout Costs</strong></div>
+                            <div><span>ROLE</span><strong class="pj-role">Quantity Surveying</strong></div>
+                            <div><span>APPROACH</span><strong class="pj-approach">Price • Track • Deliver</strong></div>
+                        </div>
+
+                        <div class="pj-controls">
+                            <button type="button" class="pj-prev" aria-label="Previous project">←</button>
+                            <button type="button" class="pj-next" aria-label="Next project">→</button>
+                            <div class="pj-dots" role="group" aria-label="Choose a project"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =================================================
+             CALL TO ACTION  (self-contained, no shared classes)
+             ================================================= -->
+        <section class="pj-cta" id="contact-cta">
+            <div class="pj-shell">
+
+                <div class="pj-cta-panel" id="pjCta">
+
+                    <div class="pj-cta-text">
+                        <span class="pj-eyebrow">Have a project in mind?</span>
+                        <h2>Let's talk about <span>your project.</span></h2>
+                        <p>
+                            Planning a development, managing construction costs or
+                            looking for professional quantity surveying support?
+                            Let's discuss what you need.
+                        </p>
+                    </div>
+
+                    <div class="pj-cta-actions">
+                        <a href="contact.html" class="pj-btn pj-btn-primary">
+                            Let's Talk About Your Project <span aria-hidden="true">↗</span>
+                        </a>
+                        <a href="services.html" class="pj-btn pj-btn-ghost">
+                            View Services <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div>
+                <strong>QS Gathimba</strong>
+                <span>Quantity Surveying &amp; Construction</span>
+            </div>
+            <p>© 2026 Gathimba | Quantity Surveyor</p>
+        </div>
+    </footer>
+
+
+    <!-- Hero card message -->
+    <div class="project-toast" id="projectToast" role="status" aria-live="polite"></div>
+
+    <!-- Image viewer -->
+    <div class="pj-lightbox" id="pjLightbox" role="dialog" aria-modal="true" aria-label="Project image" aria-hidden="true">
+        <button type="button" id="pjLightboxClose" aria-label="Close image">✕</button>
+        <img id="pjLightboxImg" src="" alt="">
+        <p id="pjLightboxCaption"></p>
+    </div>
+
+
+    <!-- ALL behaviour for this page lives in projects.js (main.js is not needed) -->
+    <script src="project.js" defer></script>
+
+</body>
+</html>
